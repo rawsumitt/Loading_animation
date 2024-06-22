@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e3edf7;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill {
+  height: 160px;
+  width: 160px;
+  /* background-color: cornflowerblue; */
+  position: relative;
+  
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  padding: 20px;
+  box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61);
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61) inset;
+  -webkit-box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61) inset;
+  -moz-box-shadow: 22px 28px 24px -19px rgba(0, 0, 0, 0.61) inset;
+}
+
+#number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dashoffset: 472;
+  stroke-dasharray: 472;
+  animation: anima 2s linear forwards;
+}
+
+svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anima {
+  100%{
+    stroke-dashoffset: 165;
+  }
+}
